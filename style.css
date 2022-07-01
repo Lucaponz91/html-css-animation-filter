@@ -52,12 +52,12 @@
   background: red;
 }
 .ex-5-square:hover{
-  width: 75px;
-  height: 75px;
+  transition: 1s;
+  transform: scale(1.2);
 }
 .ex-5-square:active{
-  width: 45px;
-  height: 45px;
+  transition: 1s;
+  transform: scale(0.7);
 }
 
 
@@ -71,7 +71,7 @@
 }
 
 .ex-7-img:hover{
-  filter: saturate(0%);
+  filter: sepia(0.5) grayscale(0.5);
   transition: 1s;
 }
 
