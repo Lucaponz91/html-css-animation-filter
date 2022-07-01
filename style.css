@@ -173,7 +173,37 @@
   width: 60px;
   height: 20px;
 }
-
+.ex-12-button:hover .ex-12-top-white{
+  animation-name: ex-12-top-white;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+@keyframes ex-12-top-white{
+  0%{
+    left: 10%;
+  }
+  50%{
+    left: 100px;
+  }
+  100%{
+    left: 10%;
+  }
+}
+.ex-12-button:hover .ex-12-bottom-white{
+  animation-name: ex-12-bottom-white;
+  animation-duration: 2s;
+}
+@keyframes ex-12-bottom-white{
+  0%{
+    right: 20%;
+  }
+  50%{
+    right: 100px;
+  }
+  100%{
+    right: 20%;
+  }
+}
 
 .ex-12-bottom-white, .ex-13-bottom-white {
   position: absolute;
@@ -182,4 +212,66 @@
   background: #f5f5f5;
   width: 60px;
   height: 20px;
+}
+
+.ex-13-button:hover .ex-13-top-white{
+  animation-name: walkingtop;
+  animation-duration: 2s;
+}
+@keyframes walkingtop{
+  0%{
+    top: -10px;
+    left: 10%;
+  }
+  25%{
+    top: -10px;
+    left: 80%;
+  }
+  50%{
+    top: 50px;
+    left: 80%;
+  }
+  75%{
+    top: 50px;
+    left: -14%;
+  }
+  90%{
+    top: -10px;
+    left: -14%;
+  }
+  100%{
+    top: -10px;
+    left: 10%;
+  }
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+  animation-name: walkingbot;
+  animation-duration: 2s;
+}
+@keyframes walkingbot{
+  0%{
+    bottom: -10px;
+    right: 20%;
+  }
+  25%{
+    bottom: -10px;
+    right: 84%;
+  }
+  50%{
+    bottom: 54px;
+    right: 84%;
+  }
+  75%{
+    bottom: 54px;
+    right: -13%;
+  }
+  90%{
+    bottom: -10px;
+    right: -13%;
+  }
+  100%{
+    bottom: -10px;
+    right: 20%;
+  }
 }
